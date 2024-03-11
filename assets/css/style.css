@@ -11,10 +11,21 @@ li {
 
 body, html {
   height: 100%;
-  line-height: 1.75;
+  line-height: 2;
   font-family: Arial, sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  border: black;
+  border-width: 1px;
+  max-width: 100%;
 }
 
 a:link {
@@ -47,18 +58,19 @@ a:active {
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  max-width: 100%;
-  height: 40%;
-  margin-top: 20px;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    max-width: 100%;
+    height: 40%;
+    margin-top: 20px;
 }
 
 @media only screen and (min-width: 600px) {
   .mobile-top {
     display: none;
   }
+
   .hero {
     height: 45%
   }
@@ -66,8 +78,9 @@ a:active {
 
 @media only screen and (max-width: 600px) {
   .container {
-      display: none;
+    display: none;
   }
+
   .hero {
     height: 30%
   }
